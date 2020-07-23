@@ -11,6 +11,9 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/vendor/demo.css">
+        <link rel="stylesheet" href="css/vendor/calendar.css">
+        <link rel="stylesheet" href="css/vendor/custom_1.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -20,10 +23,28 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+		<div class="container">	
+			<div class="custom-calendar-wrap custom-calendar-full">
+				<div class="custom-header clearfix">
+					<h2>Flexible Calendar <span></h2>
+					<h3 class="custom-month-year">
+						<span id="custom-month" class="custom-month"></span>
+						<span id="custom-year" class="custom-year"></span>
+						<nav>
+							<span id="custom-prev" class="custom-prev"></span>
+							<span id="custom-next" class="custom-next"></span>
+							<span id="custom-current" class="custom-current" title="Got to current date"></span>
+						</nav>
+					</h3>
+				</div>
+				<div id="calendar" class="fc-calendar-container"></div>
+			</div>
+		</div><!-- /container -->
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.calendario.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
